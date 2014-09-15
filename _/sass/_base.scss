@@ -1,0 +1,24 @@
+//FONT IMPORT
+@import url('http://fonts.googleapis.com/css?family=Open+Sans|Merriweather|Six+Caps');
+
+body { 
+	font-size: 16px; //IE <= 8
+	font-size: 1rem; 
+} /* =14px */
+h1 { 
+	font-size: 24px; //IE <= 8
+	font-size: 1.5rem;
+} /* =24px */
+
+a{
+	color: $link-color;
+	text-decoration: none;
+}
+
+a:hover{
+	color: $hover-color;
+}
+
+p{
+	margin-bottom: 30px;
+}

@@ -1,0 +1,16 @@
+/*
+ *	MAIN SASS FILE
+ *
+ * 	Here we have all our imports, both for components and for partials
+ *	
+ *	@author Hilmar Kari Hallbjornsson <hilmar@kosmosogkaos.is>
+*/
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/box-sizing";
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+@import "modules";

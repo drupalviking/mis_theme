@@ -1,0 +1,21 @@
+/*
+ *	LAYOUT SASS FILE
+ *
+ * 	Everything that has to do with the layout comes here.  Including the variables
+ *  we use for Susy grid system.  They are at the very top of the document.  Below
+ *	go all the components that control the layout.
+ *	
+ *	@author Hilmar Kari Hallbjornsson <hilmar@kosmosogkaos.is>
+*/
+
+//Susy setup
+//Adjust the variables to your comfort
+$total-columns  		: 12;
+$column-width 			: 60px;
+$gutter-width 			: 20px;
+$grid-padding 			: $gutter-width;
+
+//Resonsive breakpoints
+$small  				: 480px;
+$medium 				: 768px;
+$large 					: 1024px;

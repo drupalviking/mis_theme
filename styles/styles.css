@@ -1,0 +1,281 @@
+/*
+ *	MAIN SASS FILE
+ *
+ * 	Here we have all our imports, both for components and for partials
+ *	
+ *	@author Hilmar Kari Hallbjornsson <hilmar@kosmosogkaos.is>
+*/
+@import url("http://fonts.googleapis.com/css?family=Open+Sans|Merriweather|Six+Caps");
+/* line 5, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+/* line 103, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 32, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/*
+ *	VARIABLES
+ *
+ * 	Here we enter our variables, being color, fixed pixle sizes etc.
+ *	
+ *	@author
+*/
+/* line 4, ../_/sass/_base.scss */
+body {
+  font-size: 16px;
+  font-size: 1rem; }
+
+/* =14px */
+/* line 8, ../_/sass/_base.scss */
+h1 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+/* =24px */
+/* line 13, ../_/sass/_base.scss */
+a {
+  color: #fcaf17;
+  text-decoration: none; }
+
+/* line 18, ../_/sass/_base.scss */
+a:hover {
+  color: #fc7617; }
+
+/* line 22, ../_/sass/_base.scss */
+p {
+  margin-bottom: 30px; }
+
+/*
+ *	LAYOUT SASS FILE
+ *
+ * 	Everything that has to do with the layout comes here.  Including the variables
+ *  we use for Susy grid system.  They are at the very top of the document.  Below
+ *	go all the components that control the layout.
+ *	
+ *	@author Hilmar Kari Hallbjornsson <hilmar@kosmosogkaos.is>
+*/
+/* line 1, ../_/sass/_modules.scss */
+body {
+  background: #fbfbfb url(images/body.jpg);
+  color: #7e7e7e;
+  font: 14px/22px Arial, Helvetica, sans-serif; }
+
+/* line 7, ../_/sass/_modules.scss */
+#wrapper {
+  max-width: 1024px;
+  background-color: #ffffff;
+  margin: auto; }
+
+/* line 13, ../_/sass/_modules.scss */
+header {
+  overflow: hidden;
+  *zoom: 1;
+  background: #201d1c; }
+/* line 17, ../_/sass/_modules.scss */
+header .logo {
+  float: left;
+  width: 20%;
+  background-image: url("../images/nam-og-hreyfing-logo.png");
+  background-repeat: no-repeat;
+  display: block;
+  height: 150px;
+  width: 310px;
+  text-indent: -9000px;
+  margin-top: 10px;
+  margin-left: 50px; }
+/* line 30, ../_/sass/_modules.scss */
+header nav {
+  width: 60%;
+  margin-top: 80px;
+  overflow: hidden;
+  *zoom: 1; }
+/* line 35, ../_/sass/_modules.scss */
+header nav ul {
+  float: left; }
+/* line 38, ../_/sass/_modules.scss */
+header nav li {
+  list-style: none;
+  float: left;
+  text-transform: uppercase;
+  margin: 0 20px 0;
+  font-weight: bold; }
+
+/* line 49, ../_/sass/_modules.scss */
+.slider li {
+  position: relative; }
+/* line 53, ../_/sass/_modules.scss */
+.slider h1 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  color: #fcaf17;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  margin-left: 2px;
+  font-family: "Trebuchet MS";
+  text-transform: uppercase;
+  -moz-text-shadow: 1px 1px #848484;
+  -webkit-text-shadow: 1px 1px #848484;
+  -o-text-shadow: 1px 1px #848484;
+  text-shadow: 1px 1px #848484; }
+
+/* line 72, ../_/sass/_modules.scss */
+.main-content {
+  width: 100%;
+  padding: 50px;
+  background: #2f2c2a;
+  border: 1px solid #373432;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); }
+/* line 81, ../_/sass/_modules.scss */
+.main-content h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 52px;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fcaf17; }
+
+/* line 92, ../_/sass/_modules.scss */
+.aherslugreinar {
+  margin: 30px;
+  overflow: hidden;
+  *zoom: 1; }
+/* line 96, ../_/sass/_modules.scss */
+.aherslugreinar li {
+  max-width: 22.5%;
+  margin-left: 20px;
+  float: left; }
+/* line 100, ../_/sass/_modules.scss */
+.aherslugreinar li img {
+  width: 100%; }
+/* line 107, ../_/sass/_modules.scss */
+.aherslugreinar h1 {
+  font-family: "Six Caps";
+  font-size: 3rem;
+  line-height: 60px;
+  color: #4e4d4d; }
+/* line 114, ../_/sass/_modules.scss */
+.aherslugreinar img {
+  max-width: 100px;
+  max-height: 100px; }
+
+/* line 120, ../_/sass/_modules.scss */
+.last {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 50px 50px; }
+/* line 124, ../_/sass/_modules.scss */
+.last .contact {
+  float: left;
+  margin-right: 30px;
+  background-color: #fcaf17;
+  height: 300px;
+  width: 33%;
+  padding: 30px; }
+/* line 132, ../_/sass/_modules.scss */
+.last .contact .inner {
+  border: 1px solid #d3d3d3; }
+/* line 137, ../_/sass/_modules.scss */
+.last .authors {
+  float: left;
+  margin-right: 30px;
+  width: 33%; }
+/* line 143, ../_/sass/_modules.scss */
+.last .testimonials {
+  float: left;
+  width: 33%; }
+
+/* line 149, ../_/sass/_modules.scss */
+.article {
+  padding: 50px; }
+/* line 152, ../_/sass/_modules.scss */
+.article h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 52px;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fcaf17; }
+
+/* line 163, ../_/sass/_modules.scss */
+.exercises {
+  padding: 50px; }
+/* line 166, ../_/sass/_modules.scss */
+.exercises h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 52px;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fcaf17; }
+/* line 176, ../_/sass/_modules.scss */
+.exercises .categories {
+  overflow: hidden;
+  *zoom: 1; }
+/* line 178, ../_/sass/_modules.scss */
+.exercises .categories li {
+  width: 25%;
+  float: left;
+  height: 200px; }
+/* line 184, ../_/sass/_modules.scss */
+.exercises .categories .yellow {
+  background-color: yellow; }
+/* line 188, ../_/sass/_modules.scss */
+.exercises .categories .red {
+  background-color: red; }
+/* line 192, ../_/sass/_modules.scss */
+.exercises .categories .green {
+  background-color: green; }
+/* line 196, ../_/sass/_modules.scss */
+.exercises .categories .blue {
+  background-color: blue; }
+
+/* line 203, ../_/sass/_modules.scss */
+.tools li {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0; }

@@ -1,0 +1,9 @@
+name = MIS (Move in School)
+description = Sérhannað útlit fyrir MIS
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = styles/styles.css
+scripts[] = scripts/jquery.flexslider-min.js
+
+regions[content] = Content

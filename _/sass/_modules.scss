@@ -1,0 +1,208 @@
+body{
+	background: #fbfbfb url(images/body.jpg);
+	color: $text-color;
+	font: 14px/22px Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+	max-width: 1024px;
+	background-color: #ffffff;
+	margin: auto;
+}
+
+header{
+	@include clearfix;
+	background: #201d1c;
+
+	.logo{
+		float: left;
+		width: 20%;
+		background-image: url('../images/nam-og-hreyfing-logo.png');
+		background-repeat: no-repeat;
+		display: block;
+		height: 150px;
+		width: 310px;
+		text-indent: -9000px;
+		margin-top: 10px;
+		margin-left: 50px;
+	}
+
+	nav{
+		width: 60%;
+		margin-top: 80px;
+		@include clearfix;
+
+		ul{
+			float: left;
+		}
+		li{
+			list-style: none;
+			float: left;
+			text-transform: uppercase;
+			margin: 0 20px 0;
+			font-weight: bold;
+		}
+	}
+}
+
+.slider{
+	li{
+		position: relative;
+	}
+
+	h1{
+		position: absolute;
+		top: 50px;
+		left: 30px;
+		color: $link-color;
+		font-size: 100px;
+		line-height: 100px;
+		font-weight: bold;
+		margin-bottom: 60px;
+		margin-left: 2px;
+		font-family: "Trebuchet MS";
+		text-transform: uppercase;
+		-moz-text-shadow: 1px 1px #848484;
+		-webkit-text-shadow: 1px 1px #848484;
+		-o-text-shadow: 1px 1px #848484;
+		text-shadow: 1px 1px #848484;
+	}
+}
+
+.main-content{
+	width: 100%;
+	padding: 50px;
+	background: #2f2c2a;
+	border: 1px solid #373432;
+	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+
+	h1{
+		text-transform: uppercase;
+		font-size: 36px;
+		line-height: 52px;
+		font-family: "Trebuchet MS";
+		font-weight: bold;
+		margin-bottom: 5px;
+		color: $link-color;
+	}
+}
+
+.aherslugreinar{
+	margin: 30px;
+	@include clearfix;
+
+	li{
+		max-width: 22.5%;
+		margin-left: 20px;
+
+		img{
+			width: 100%;
+		}
+
+		float: left;
+	}
+
+	h1{
+		font-family: "Six Caps";
+		font-size: 3rem;
+		line-height: 60px;
+		color: #4e4d4d;
+	}
+
+	img{
+		max-width: 100px;
+		max-height: 100px;
+	}
+}
+
+.last{
+	@include clearfix;
+	margin: 50px 50px;
+
+	.contact{
+		float: left;
+		margin-right: 30px;
+		background-color: $link-color;
+		height: 300px;
+		width: 33%;
+		padding: 30px;
+
+		.inner{
+			border: 1px solid #d3d3d3;
+		}
+	}
+
+	.authors{
+		float: left;
+		margin-right: 30px;
+		width: 33%;
+	}
+
+	.testimonials{
+		float: left;
+		width: 33%;
+	}
+}
+
+.article{
+	padding: 50px;
+
+	h1{
+		text-transform: uppercase;
+		font-size: 36px;
+		line-height: 52px;
+		font-family: "Trebuchet MS";
+		font-weight: bold;
+		margin-bottom: 5px;
+		color: $link-color;
+	}
+}
+
+.exercises{
+	padding: 50px;
+
+	h1{
+		text-transform: uppercase;
+		font-size: 36px;
+		line-height: 52px;
+		font-family: "Trebuchet MS";
+		font-weight: bold;
+		margin-bottom: 5px;
+		color: $link-color;
+	}
+
+	.categories{
+		@include clearfix;
+		li{
+			width: 25%;
+			float: left;
+			height: 200px;
+		}
+
+		.yellow{
+			background-color: yellow;
+		}
+
+		.red{
+			background-color: red;
+		}
+
+		.green{
+			background-color: green;
+		}
+
+		.blue{
+			background-color: blue;
+		}
+	}
+}
+
+.tools{
+	li{
+		border: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}
