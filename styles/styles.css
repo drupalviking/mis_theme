@@ -1,12 +1,13 @@
+@charset "CP850";
 /*
  *	MAIN SASS FILE
  *
  * 	Here we have all our imports, both for components and for partials
  *	
- *	@author Hilmar Kari Hallbjornsson <hilmar@kosmosogkaos.is>
+ *	@author Hilmar Kári Hallbjörnsson <hilmar@kosmosogkaos.is>
 */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans|Merriweather|Six+Caps");
-/* line 5, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -15,39 +16,39 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-/* line 103, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none; }
 
-/* line 32, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+/* line 116, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
 /*
@@ -57,30 +58,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  *	
  *	@author
 */
-/* line 4, ../_/sass/_base.scss */
+/* line 6, ../_/sass/_base.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 12, ../_/sass/_base.scss */
 body {
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem; 
+  background-color: pink;
+}
 
 /* =14px */
-/* line 8, ../_/sass/_base.scss */
+/* line 16, ../_/sass/_base.scss */
 h1 {
   font-size: 24px;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  line-height: 1.75rem; }
 
 /* =24px */
-/* line 13, ../_/sass/_base.scss */
+/* line 22, ../_/sass/_base.scss */
 a {
   color: #fcaf17;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: bold; }
 
-/* line 18, ../_/sass/_base.scss */
+/* line 28, ../_/sass/_base.scss */
 a:hover {
   color: #fc7617; }
 
-/* line 22, ../_/sass/_base.scss */
+/* line 32, ../_/sass/_base.scss */
 p {
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
+
+/* line 36, ../_/sass/_base.scss */
+section {
+  padding-bottom: 15px; }
 
 /*
  *	LAYOUT SASS FILE
@@ -89,7 +104,7 @@ p {
  *  we use for Susy grid system.  They are at the very top of the document.  Below
  *	go all the components that control the layout.
  *	
- *	@author Hilmar Kari Hallbjornsson <hilmar@kosmosogkaos.is>
+ *	@author Hilmar Kári Hallbjörnsson <hilmar@kosmosogkaos.is>
 */
 /* line 1, ../_/sass/_modules.scss */
 body {
@@ -103,33 +118,38 @@ body {
   background-color: #ffffff;
   margin: auto; }
 
-/* line 13, ../_/sass/_modules.scss */
+/* -------------------------------------
+Navigation
+-------------------------------------- */
+/* line 17, ../_/sass/_modules.scss */
 header {
   overflow: hidden;
   *zoom: 1;
-  background: #201d1c; }
-/* line 17, ../_/sass/_modules.scss */
+  background: #201d1c;
+  max-width: 1024px;
+  margin: auto; }
+/* line 22, ../_/sass/_modules.scss */
 header .logo {
   float: left;
-  width: 20%;
   background-image: url("../images/nam-og-hreyfing-logo.png");
   background-repeat: no-repeat;
   display: block;
   height: 150px;
-  width: 310px;
+  width: 200px;
   text-indent: -9000px;
   margin-top: 10px;
   margin-left: 50px; }
-/* line 30, ../_/sass/_modules.scss */
+/* line 34, ../_/sass/_modules.scss */
 header nav {
-  width: 60%;
+  float: right;
+  margin-right: 45px;
   margin-top: 80px;
   overflow: hidden;
   *zoom: 1; }
-/* line 35, ../_/sass/_modules.scss */
+/* line 40, ../_/sass/_modules.scss */
 header nav ul {
   float: left; }
-/* line 38, ../_/sass/_modules.scss */
+/* line 43, ../_/sass/_modules.scss */
 header nav li {
   list-style: none;
   float: left;
@@ -137,10 +157,20 @@ header nav li {
   margin: 0 20px 0;
   font-weight: bold; }
 
-/* line 49, ../_/sass/_modules.scss */
+/* -------------------------------------
+Frontpage
+-------------------------------------- */
+/* line 57, ../_/sass/_modules.scss */
+.slider {
+  max-height: 520px; }
+/* line 60, ../_/sass/_modules.scss */
 .slider li {
   position: relative; }
-/* line 53, ../_/sass/_modules.scss */
+/* line 62, ../_/sass/_modules.scss */
+.slider li img {
+  height: 100%;
+  width: auto; }
+/* line 65, ../_/sass/_modules.scss */
 .slider h1 {
   position: absolute;
   top: 50px;
@@ -158,7 +188,7 @@ header nav li {
   -o-text-shadow: 1px 1px #848484;
   text-shadow: 1px 1px #848484; }
 
-/* line 72, ../_/sass/_modules.scss */
+/* line 84, ../_/sass/_modules.scss */
 .main-content {
   width: 100%;
   padding: 50px;
@@ -167,7 +197,7 @@ header nav li {
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); }
-/* line 81, ../_/sass/_modules.scss */
+/* line 93, ../_/sass/_modules.scss */
 .main-content h1 {
   text-transform: uppercase;
   font-size: 36px;
@@ -176,61 +206,168 @@ header nav li {
   font-weight: bold;
   margin-bottom: 5px;
   color: #fcaf17; }
+/* line 102, ../_/sass/_modules.scss */
+.main-content h1, .main-content p {
+  width: 60%; }
+/* line 104, ../_/sass/_modules.scss */
+.main-content .takki {
+  background-color: #7e7e7e;
+  border-radius: 8px;
+  float: right;
+  height: 59px;
+  margin-top: -89px;
+  padding: 18px 25px;
+  cursor: pointer; }
+/* line 112, ../_/sass/_modules.scss */
+.main-content .takki a {
+  font-size: 1.25rem;
+  text-transform: Uppercase;
+  color: white; }
+/* line 116, ../_/sass/_modules.scss */
+.main-content .takki a:after {
+  content: "  »";
+  font-weight: 300;
+  font-size: 1.5rem; }
+/* line 118, ../_/sass/_modules.scss */
+.main-content .takki:hover {
+  background-color: #fcaf17;
+  transition: all 0.5s ease; }
+/* line 120, ../_/sass/_modules.scss */
+.main-content .takki:hover a {
+  color: #7e7e7e;
+  transition: all 0.5s ease; }
 
-/* line 92, ../_/sass/_modules.scss */
+/* line 127, ../_/sass/_modules.scss */
 .aherslugreinar {
-  margin: 30px;
+  clear: both;
   overflow: hidden;
-  *zoom: 1; }
-/* line 96, ../_/sass/_modules.scss */
-.aherslugreinar li {
+  *zoom: 1;
+  background-color: white;
+  /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top, white 70%, #f2f2f2);
+  /* For Chrome and Safari */
+  background-image: -moz-linear-gradient(top, white 70%, #f2f2f2);
+  /* For old Fx (3.6 to 15) */
+  background-image: -ms-linear-gradient(top, white 70%, #f2f2f2);
+  /* For pre-releases of IE 10*/
+  background-image: -o-linear-gradient(top, white 70%, #f2f2f2);
+  /* For old Opera (11.1 to 12.0) */
+  background-image: linear-gradient(to bottom, #ffffff 70%, #f2f2f2);
+  /* Standard syntax; must be last */ }
+/* line 133, ../_/sass/_modules.scss */
+.aherslugreinar ul {
+  margin: 30px; }
+/* line 136, ../_/sass/_modules.scss */
+.aherslugreinar ul li {
   max-width: 22.5%;
   margin-left: 20px;
   float: left; }
-/* line 100, ../_/sass/_modules.scss */
-.aherslugreinar li img {
+/* line 141, ../_/sass/_modules.scss */
+.aherslugreinar ul li img {
   width: 100%; }
-/* line 107, ../_/sass/_modules.scss */
+/* line 148, ../_/sass/_modules.scss */
 .aherslugreinar h1 {
   font-family: "Six Caps";
   font-size: 3rem;
   line-height: 60px;
   color: #4e4d4d; }
-/* line 114, ../_/sass/_modules.scss */
+/* line 155, ../_/sass/_modules.scss */
 .aherslugreinar img {
   max-width: 100px;
   max-height: 100px; }
+/* line 160, ../_/sass/_modules.scss */
+.aherslugreinar a > p:after {
+  content: "  »";
+  font-weight: 300; }
 
-/* line 120, ../_/sass/_modules.scss */
+/* line 163, ../_/sass/_modules.scss */
 .last {
   overflow: hidden;
   *zoom: 1;
-  margin: 50px 50px; }
-/* line 124, ../_/sass/_modules.scss */
+  margin: 50px 0 0; }
+/* line 166, ../_/sass/_modules.scss */
+.last h1 {
+  padding-bottom: 20px; }
+/* line 167, ../_/sass/_modules.scss */
 .last .contact {
   float: left;
-  margin-right: 30px;
+  min-height: 300px;
+  width: 32%;
+  padding: 10px 8%; }
+/* line 174, ../_/sass/_modules.scss */
+.last .contact .content-inner {
   background-color: #fcaf17;
-  height: 300px;
-  width: 33%;
-  padding: 30px; }
-/* line 132, ../_/sass/_modules.scss */
-.last .contact .inner {
-  border: 1px solid #d3d3d3; }
-/* line 137, ../_/sass/_modules.scss */
+  -moz-box-shadow: 0 0 0 10px #fcaf17;
+  -webkit-box-shadow: 0 0 0 10px #fcaf17;
+  box-shadow: 0 0 0 10px #fcaf17;
+  border: 1px solid white;
+  padding: 20px;
+  text-align: center;
+  min-height: 300px; }
+/* line 184, ../_/sass/_modules.scss */
+.last .contact .content-inner ul {
+  padding-top: 50%; }
+/* line 188, ../_/sass/_modules.scss */
 .last .authors {
   float: left;
-  margin-right: 30px;
-  width: 33%; }
-/* line 143, ../_/sass/_modules.scss */
-.last .testimonials {
+  margin: 0 1%;
+  width: 32%; }
+/* line 194, ../_/sass/_modules.scss */
+.last .testimonial {
   float: left;
-  width: 33%; }
+  width: 32%;
+  margin: 0 1%; }
+/* line 199, ../_/sass/_modules.scss */
+.last .testimonial h1 {
+  background: none repeat scroll 0 0 #f2f2f2;
+  border-radius: 10px;
+  margin: 1em 0 -1.2em;
+  padding: 35px 15px 30px;
+  position: relative;
+  width: 90%; }
+/* line 200, ../_/sass/_modules.scss */
+.last .testimonial h1:before {
+  color: rgba(0, 0, 0, 0.3);
+  content: "“";
+  float: left;
+  font-family: "Merriweather";
+  font-size: 5.5rem;
+  margin-right: 7px;
+  margin-top: 26px; }
+/* line 216, ../_/sass/_modules.scss */
+.last .testimonial p {
+  position: relative;
+  padding: 0 30px 25px;
+  margin: 1em 0 3em;
+  background: #f2f2f2;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 90%; }
+/* line 226, ../_/sass/_modules.scss */
+.last .testimonial p:after {
+  content: "";
+  position: absolute;
+  right: 50px;
+  border-width: 55px 25px 0;
+  bottom: -35px;
+  -ms-transform: rotate(20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(20deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(20deg);
+  border-style: solid;
+  border-color: #f2f2f2 transparent;
+  display: block;
+  width: 0; }
 
-/* line 149, ../_/sass/_modules.scss */
+/* -------------------------------------
+Subpages & articles aso
+-------------------------------------- */
+/* line 248, ../_/sass/_modules.scss */
 .article {
   padding: 50px; }
-/* line 152, ../_/sass/_modules.scss */
+/* line 251, ../_/sass/_modules.scss */
 .article h1 {
   text-transform: uppercase;
   font-size: 36px;
@@ -240,10 +377,10 @@ header nav li {
   margin-bottom: 5px;
   color: #fcaf17; }
 
-/* line 163, ../_/sass/_modules.scss */
+/* line 262, ../_/sass/_modules.scss */
 .exercises {
   padding: 50px; }
-/* line 166, ../_/sass/_modules.scss */
+/* line 265, ../_/sass/_modules.scss */
 .exercises h1 {
   text-transform: uppercase;
   font-size: 36px;
@@ -252,30 +389,111 @@ header nav li {
   font-weight: bold;
   margin-bottom: 5px;
   color: #fcaf17; }
-/* line 176, ../_/sass/_modules.scss */
+/* line 275, ../_/sass/_modules.scss */
 .exercises .categories {
+  width: 100%;
   overflow: hidden;
   *zoom: 1; }
-/* line 178, ../_/sass/_modules.scss */
+/* line 278, ../_/sass/_modules.scss */
 .exercises .categories li {
-  width: 25%;
+  width: 23%;
   float: left;
-  height: 200px; }
-/* line 184, ../_/sass/_modules.scss */
+  height: 200px;
+  margin: 0 1%; }
+/* line 284, ../_/sass/_modules.scss */
+.exercises .categories li:hover {
+  transition: all 1s ease; }
+/* line 288, ../_/sass/_modules.scss */
+.exercises .categories h2 {
+  color: white;
+  font-size: 1rem;
+  margin: 30% 19%;
+  text-transform: uppercase;
+  text-shadow: 2px 1px rgba(0, 0, 0, 0.2); }
+/* line 296, ../_/sass/_modules.scss */
 .exercises .categories .yellow {
-  background-color: yellow; }
-/* line 188, ../_/sass/_modules.scss */
+  background-color: #fdd930; }
+/* line 300, ../_/sass/_modules.scss */
 .exercises .categories .red {
-  background-color: red; }
-/* line 192, ../_/sass/_modules.scss */
+  background-color: #ef452f; }
+/* line 304, ../_/sass/_modules.scss */
 .exercises .categories .green {
-  background-color: green; }
-/* line 196, ../_/sass/_modules.scss */
+  background-color: #bfdb39; }
+/* line 308, ../_/sass/_modules.scss */
 .exercises .categories .blue {
-  background-color: blue; }
+  background-color: #2fa88c; }
+/* line 314, ../_/sass/_modules.scss */
+.exercises .wrapper li {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 30px; }
+/* line 318, ../_/sass/_modules.scss */
+.exercises .wrapper li:last-of-type {
+  border-bottom: none; }
+/* line 319, ../_/sass/_modules.scss */
+.exercises .wrapper li figure {
+  display: inline-flex;
+  width: 20%; }
+/* line 320, ../_/sass/_modules.scss */
+.exercises .wrapper li .text {
+  display: inline-table;
+  vertical-align: top;
+  width: 70%;
+  margin-left: 20px; }
+/* line 327, ../_/sass/_modules.scss */
+.exercises .wrapper li audio {
+  width: 250px; }
 
-/* line 203, ../_/sass/_modules.scss */
-.tools li {
-  border: none;
-  margin-bottom: 0;
-  padding-bottom: 0; }
+/* line 333, ../_/sass/_modules.scss */
+.node-type-aefing #wrapper {
+  padding: 50px; }
+/* line 335, ../_/sass/_modules.scss */
+.node-type-aefing #wrapper figure {
+  display: inline-flex;
+  width: 20%; }
+/* line 336, ../_/sass/_modules.scss */
+.node-type-aefing #wrapper .text {
+  display: inline-table;
+  vertical-align: top;
+  width: 70%;
+  margin-left: 20px; }
+/* line 343, ../_/sass/_modules.scss */
+.node-type-aefing #wrapper audio {
+  width: 250px; }
+
+/* -------------------------------------
+LOG IN / GERAST 
+-------------------------------------- */
+/* line 354, ../_/sass/_modules.scss */
+.node-type-webform #wrapper, .page-user #wrapper {
+  padding: 30px; }
+/* line 355, ../_/sass/_modules.scss */
+.node-type-webform #wrapper input, .page-user #wrapper input {
+  height: 40px;
+  padding: 10px; }
+/* line 358, ../_/sass/_modules.scss */
+.node-type-webform #wrapper input.form-submit, .page-user #wrapper input.form-submit {
+  background-color: #7e7e7e;
+  border: medium none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 10px 30px;
+  text-transform: uppercase; }
+/* line 369, ../_/sass/_modules.scss */
+.node-type-webform #wrapper input.form-submit:hover, .page-user #wrapper input.form-submit:hover {
+  background-color: #fcaf17;
+  color: #7e7e7e;
+  transition: all 0.5s ease; }
+
+ul.tools{
+  li.tool{
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    list-style-type: disc;
+  list-style-position: inside;
+  }
+}
