@@ -63,7 +63,7 @@ if( $catParam )
 		<?php else : ?>
 			<ul class="categories">
 				<?php foreach( $catArray as $cat ) : ?>
-					<a href="/aefingar?cat=<?=$cat->field_css_class['und'][0]['safe_value'] ?>">
+					<a href="<?php echo ($language->language == 'is') ? '/aefingar?cat=' : '/en/exercise-programs?cat='; ?><?=$cat->field_css_class['und'][0]['safe_value'] ?>">
 						<li class="<?=render( $cat->field_css_class['und'][0]['safe_value'] ); ?>">
 							<h2><?=$cat->name; ?></h2>
 						</li>

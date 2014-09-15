@@ -72,7 +72,8 @@ function mis_theme_get_frontpage_content($language)
 
 		$value = array(
 			'field_image'	 	=> (isset($c->field_image["und"])) ? scald_atom_load( $c->field_image["und"][0]["sid"] ) : null,
-			'field_fyrirsogn'	=> (isset($c->field_fyrirsogn["und"])) ? $c->field_fyrirsogn : null
+			'field_fyrirsogn'	=> (isset($c->field_fyrirsogn["und"])) ? $c->field_fyrirsogn : null,
+			'field_fyrirsogn_a_ensku'	=> (isset($c->field_fyrirsogn_a_ensku["und"])) ? $c->field_fyrirsogn_a_ensku : null
 		);
 	}
 

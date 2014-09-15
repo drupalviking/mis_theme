@@ -15,7 +15,10 @@
 					<?php foreach( $frontpage->field_fs_slider['und'] as $slider ) : ?>
 					<li>
 						<img src="<?=image_style_url('slider', $slider['field_image']->file_source); ?>" />
-						<h1><?=$slider['field_fyrirsogn']['und'][0]['safe_value']; ?></h1>
+						<h1><?=($language->language == 'is')
+								? $slider['field_fyrirsogn']['und'][0]['safe_value']
+								: $slider['field_fyrirsogn_a_ensku']['und'][0]['safe_value']; ?>
+						</h1>
 					</li>
 					<?php endforeach; ?>
 				</ul>
